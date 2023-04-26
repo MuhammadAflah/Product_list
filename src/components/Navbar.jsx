@@ -2,25 +2,17 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import Badge from '@mui/material/Badge';
 import Mail from "@mui/icons-material/Mail";
 import Notification from '@mui/icons-material/Notifications';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Avatar from '@mui/material/Avatar';
-import { alpha, styled } from '@mui/material/styles';
-import { useState } from 'react';
+import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { InputBase } from '@mui/material';
-
 
 const StyledToolbar = styled(Toolbar)({
     display: "flex",
     justifyContent: "space-between",
 });
-
-
 
 const Icons = styled(Box)(({ theme }) => ({
     display: "none",
@@ -44,11 +36,8 @@ const MobileIcons = styled(Box)(({ theme }) => ({
 
 const Navbar = () => {
 
-    const [search, setSearch] = useState("")
-
-
     return (
-        <AppBar sx={{ backgroundColor: "rgba(39, 11, 96, 0.7)" }} position='sticky' >
+        <AppBar sx={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }} position='sticky' >
             <StyledToolbar>
                 <Typography variant='h3' sx={{ display: { xs: "none", md: "block" } }}>
                     Shoppee

@@ -6,7 +6,6 @@ import {
     TableContainer,
     TableHead,
     TableRow,
-    Paper,
     Button,
     Dialog,
     DialogTitle,
@@ -30,7 +29,6 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import { useEffect } from 'react';
 import axios from 'axios';
-import { Navigate, useNavigate } from "react-router-dom"
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -82,8 +80,6 @@ const ViewProducts = () => {
     const [openEditModal, setOpenEditModal] = useState(false);
     const [searchValue, setSearchValue] = useState('');
     const [filterValue, setFilterValue] = useState('');
-
-    const navigate = useNavigate();
 
 
     useEffect(() => {
